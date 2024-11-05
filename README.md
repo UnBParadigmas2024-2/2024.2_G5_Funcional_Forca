@@ -9,7 +9,7 @@
 | -- | -- |
 | 18/0015311 |  Danilo Domingo |
 | 19/0020814 |  Vinícius Roriz |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0030291 |  Jackes Fonseca |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
