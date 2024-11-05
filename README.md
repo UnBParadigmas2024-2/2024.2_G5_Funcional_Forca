@@ -1,14 +1,14 @@
 # Jogo da Forca
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
-**Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: 05<br>
+**Nro do Grupo**: 05<br>
 **Paradigma**: FUNCIONAL<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
 | 18/0015311 |  Danilo Domingo |
-| 19/020814  |  Vinícius Roriz |
+| 19/0020814 |  Vinícius Roriz |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
 ## Sobre 
