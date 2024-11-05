@@ -1,9 +1,20 @@
 module Main where
 
-import GameState (State(..), newGame)
+import GameLogic (makeGuess)
+import GameState (State (..), newGame)
 
 main :: IO ()
 main = do
   let initialState = newGame
-  putStrLn $ "A palavra é: " ++ word initialState
-  putStrLn $ "Vidas restantes: " ++ show (livesRemaining initialState)
+
+  putStrLn $ "Palavra: " ++ word initialState ++ "\n"
+
+  let updatedState1 = makeGuess 'h' initialState
+  putStrLn "Palpite: h"
+  putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState1)
+  putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState1) ++ "\n"
+
+  let updatedState2 = makeGuess 'j' updatedState1
+  putStrLn "Palpite: j"
+  putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState2)
+  putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState2)
