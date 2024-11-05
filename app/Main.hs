@@ -1,9 +1,9 @@
 module Main where
 
-import GameState (State(..))
+import GameState (State(..), newGame)
 
 main :: IO ()
 main = do
-  let initialState = State { word = "haskell", guessedLetters = [], livesRemaining = 6 }
+  let initialState = newGame
   putStrLn $ "A palavra é: " ++ word initialState
   putStrLn $ "Vidas restantes: " ++ show (livesRemaining initialState)
