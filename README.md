@@ -7,6 +7,7 @@
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
+| 18/0015311 |  Danilo Domingo |
 | 19/020814  |  Vinícius Roriz |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
