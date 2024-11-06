@@ -1,4 +1,5 @@
 module ChooseWord (chooseWord) where
 
-chooseWord :: String
-chooseWord = "haskell"
+chooseWord :: IO String
+chooseWord = do
+    return "haskell"

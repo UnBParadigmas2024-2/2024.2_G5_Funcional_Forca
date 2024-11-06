@@ -5,16 +5,21 @@ import GameState (State (..), newGame)
 
 main :: IO ()
 main = do
-  let initialState = newGame
+  -- O operador '<-' transforma o 'IO State' retornado pelo newGame em 'State'
+  initialState <- newGame
+  selectedWord <- word initialState
 
-  putStrLn $ "Palavra: " ++ word initialState ++ "\n"
+  putStrLn $ "Palavra: " ++ selectedWord ++ "\n"
 
-  let updatedState1 = makeGuess 'h' initialState
+  -- Primeiro palpite
+  -- O 'return' transforma o 'State' em 'IO State'
+  updatedState1 <- makeGuess 'h' (return initialState) 
   putStrLn "Palpite: h"
   putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState1)
   putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState1) ++ "\n"
 
-  let updatedState2 = makeGuess 'j' updatedState1
+  -- Segundo palpite
+  updatedState2 <- makeGuess 'j' (return updatedState1)
   putStrLn "Palpite: j"
   putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState2)
   putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState2)
