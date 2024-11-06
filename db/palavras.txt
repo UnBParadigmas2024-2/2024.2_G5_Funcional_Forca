@@ -1,0 +1,9 @@
+haskell
+programacao
+computador
+codigo
+modulo
+linguagem
+aleatorio
+jogo
+forca
