@@ -12,21 +12,26 @@
 | 19/0030291 |  Jackes Fonseca |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
-Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
+Esta é uma implementação em Haskell do clássico jogo da forca, onde o jogador tenta adivinhar uma palavra escondida, letra por letra, dentro de um número limitado de tentativas.
+
+O progama escolhe uma palavra e mostra a quantidade de letras representadas por "_". O jogador então tem 6 tentativas para acertar todas as letras da palavra, com cada tentativa errada adicionando uma parte do corpo ao boneco na forca, que é exibida pelo programa.
 
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
 **Linguagens**: Haskell<br>
-**Tecnologias**: xxxxxx<br>
+**Tecnologias**: Cabal<br>
 
-### Linux / WSL
 1. Instale o GHCup e suas dependências:
+#### Linux / WSL
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
+- Quando questionado, escolha sempre as opções padrão
+#### Windows (PowerShell Não Admin)
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
 ```
 2. Compile e execute o projeto:
 ```
@@ -35,9 +40,6 @@ cabal build
 ```
 cabal run
 ```
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
 
 ## Uso 
 Explique como usar seu projeto.
@@ -68,5 +70,9 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 (iV) Trabalhos Futuros.
 
 ## Fontes
-Referencie, adequadamente, as referências utilizadas.
-Indique ainda sobre fontes de leitura complementares.
+### [Zvon](http://www.zvon.org/other/haskell/Outputglobal/index.html)
+Zvon é um site que possui informações sobre várias funções e módulos da linguagem Haskell, apresentadas de forma concisa e com exemplos.  
+<img src="img/zvon.png" width="500"/>
+
+Sugestão de leitura: 
+*Effective Haskell*. Rebecca Skinner, 2023
