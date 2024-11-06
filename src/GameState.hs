@@ -3,10 +3,11 @@ module GameState (State(..), newGame) where
 import ChooseWord (chooseWord)
 
 data State = State {
-    word :: String,
+    word :: IO String,
     guessedLetters :: [Char],
     livesRemaining :: Int
 }
 
-newGame :: State
-newGame = State chooseWord [] 6
+newGame :: IO State
+newGame = do -- IO precisa estar dentro de um 'do'
+    return (State chooseWord [] 6)
