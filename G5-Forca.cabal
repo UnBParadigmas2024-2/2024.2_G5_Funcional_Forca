@@ -16,7 +16,7 @@ common warnings
 
 library
     import:           warnings
-    exposed-modules:  GameState, ChooseWord, GameLogic
+    exposed-modules:  GameState, ChooseWord, GameLogic, RenderState
     build-depends:    base ^>=4.17.2.1, random
     hs-source-dirs:   src
     default-language: Haskell2010
