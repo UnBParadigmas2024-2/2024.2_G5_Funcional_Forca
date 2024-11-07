@@ -16,14 +16,21 @@ main = do
   let updatedState1 = makeGuess 'o' initialState 
   renderState updatedState1
 
-  putStrLn "Palpite: o"
-  putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState1)
-  putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState1) ++ "\n"
-
   -- Segundo palpite
-  let updatedState2 = makeGuess 'j'  updatedState1
+  let updatedState2 = makeGuess 'z'  updatedState1
   renderState updatedState2
 
-  putStrLn "Palpite: j"
-  putStrLn $ "Letras usadas: " ++ show (guessedLetters updatedState2)
-  putStrLn $ "Vidas restantes: " ++ show (livesRemaining updatedState2)
+  -- let updatedState3 = makeGuess 'q'  updatedState2
+  -- renderState updatedState3
+
+  -- let updatedState4 = makeGuess 'w'  updatedState3
+  -- renderState updatedState4
+
+  -- let updatedState5 = makeGuess 'k'  updatedState4
+  -- renderState updatedState5
+
+  -- let updatedState6 = makeGuess 'y'  updatedState5
+  -- renderState updatedState6
+
+  -- let updatedState7 = makeGuess 'x'  updatedState6
+  -- renderState updatedState7
