@@ -32,6 +32,7 @@ gameLoop currentState = do
   renderState updatedState
 
   -- A fazer: Condição de parada -> se jogador perdeu ou ganhou, sai do jogo
-  if guess == 'w'
-    then exitSuccess
-    else gameLoop updatedState
+  -- Exemplo condição de parada:
+    -- if guess == 'w'
+    -- then exitSuccess
+    -- else gameLoop updatedState
