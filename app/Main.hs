@@ -12,9 +12,6 @@ main = do
     -- Inicializa o jogo com o estado inicial
     initialState <- newGame
 
-    -- Palavra escolhida aleatoriamente 
-    putStrLn $ "Palavra: " ++ word initialState ++ "\n"
-
     -- Renderiza o estado inicial do jogo
     renderState initialState
 
