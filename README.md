@@ -8,8 +8,10 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 18/0015311 |  Danilo Domingo |
-| 19/0020814 |  Vinícius Roriz |
 | 19/0030291 |  Jackes Fonseca |
+| - |  Karla |
+| 18/0042661 |  Luís Furtado de Araújo|
+| 19/0020814 |  Vinícius Roriz |
 
 ## Sobre 
 Esta é uma implementação em Haskell do clássico jogo da forca, onde o jogador tenta adivinhar uma palavra escondida, letra por letra, dentro de um número limitado de tentativas.
