@@ -1,36 +1,37 @@
 module Main where
 
+import Control.Monad (forever)
+import System.Exit (exitSuccess)
+
 import GameLogic (makeGuess)
 import GameState (State (..), newGame)
 import RenderState (renderState)
 
 main :: IO ()
 main = do
-  -- O operador '<-' transforma o 'IO State' retornado pelo newGame em 'State'
+  -- Inicializa o jogo com o estado inicial
   initialState <- newGame
 
+  -- Palavra escolhida aleatoriamente 
   putStrLn $ "Palavra: " ++ word initialState ++ "\n"
+
+  -- Renderiza o estado inicial do jogo
   renderState initialState
 
-  -- Primeiro palpite
-  let updatedState1 = makeGuess 'o' initialState 
-  renderState updatedState1
+  -- Chama a função de loop com o estado inicial
+  gameLoop initialState
 
-  -- Segundo palpite
-  let updatedState2 = makeGuess 'z'  updatedState1
-  renderState updatedState2
+-- Função recursiva que mantém o estado atualizado em cada iteração
+gameLoop :: State -> IO ()
+gameLoop currentState = do
+  putStrLn "Digite um único caractere:"
+  guess <- getChar
 
-  -- let updatedState3 = makeGuess 'q'  updatedState2
-  -- renderState updatedState3
+  -- Atualiza o estado com o palpite
+  let updatedState = makeGuess guess currentState
+  renderState updatedState
 
-  -- let updatedState4 = makeGuess 'w'  updatedState3
-  -- renderState updatedState4
-
-  -- let updatedState5 = makeGuess 'k'  updatedState4
-  -- renderState updatedState5
-
-  -- let updatedState6 = makeGuess 'y'  updatedState5
-  -- renderState updatedState6
-
-  -- let updatedState7 = makeGuess 'x'  updatedState6
-  -- renderState updatedState7
+  -- A fazer: Condição de parada -> se jogador perdeu ou ganhou, sai do jogo
+  if guess == 'w'
+    then exitSuccess
+    else gameLoop updatedState
