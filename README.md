@@ -37,16 +37,23 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager
 ```
 2. Compile e execute o projeto:
 ```
-cabal build
-```  
-```
 cabal run
 ```
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+Ao executar o projeto, o programa escolherá uma palavra e mostrará traços representando a quantidade de letras. O jogador pode então digitar um caractere (deve ser uma letra do alfabeto, não importando se maiúscula ou minúscula). Caso seja digitado mais de um caractere, só o primeiro será reconhecido.  
+<img src="img/round1.png" width="500"/>  
+
+O programa irá gerar outra forca com o novo estado do jogo, substituindo traços quando o caractere sugerido pelo jogador se encaixar naquela posição na palavra.
+<img src="img/round2.png" width="500"/>  
+
+Quando o jogador errar seu palpite, uma nova parte do boneco será gerada na forca, e o jogo acaba se o boneco ficar completo, portanto o jogador tem 6 tentativas.
+<img src="img/round3.png" width="500"/>  
+
+Ao acertar todas as letras, o jogo se encerra na vitória do jogador.  
+<img src="img/vitoria.png" width="500"/>
+
+
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -63,6 +70,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) | Comprobatórios (ex. links para commits)
 | -- | -- | -- | -- |
 | Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa | Commit tal (com link)
+| Vinícius  | Planejamento, organização, revisão, módulos GameLogic e GameState   | Excelente | [GameLogic](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/pull/3/commits/4db715fe5cce61b0e88f29d57597003eb0f36903), [GameState](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/4fbf7d9ac3055c3ceae8a45bee42c56b909c486b)
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
