@@ -17,7 +17,7 @@ common warnings
 library
     import:           warnings
     exposed-modules:  GameState, ChooseWord, GameLogic, RenderState
-    build-depends:    base ^>=4.17.2.1, random
+    build-depends:    base >= 4.17 && < 4.21, random
     hs-source-dirs:   src
     default-language: Haskell2010
 
@@ -25,7 +25,7 @@ executable G5-Forca
     import:           warnings
     main-is:          Main.hs
     build-depends:
-        base ^>=4.17.2.1,
+        base >= 4.17 && < 4.21,
         G5-Forca
     hs-source-dirs:   app
     default-language: Haskell2010
