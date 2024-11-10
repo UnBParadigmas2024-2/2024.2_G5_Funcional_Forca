@@ -72,7 +72,7 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) | Comprobatórios (ex. links para commits)
 | -- | -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa | Commit tal (com link)
+| Jackes  |  Programação da funcionalidade de sugerir palavra aleatória, revisão de Pull Request | Boa | Commit tal (com link)
 | Vinícius  | Planejamento, organização, revisão, módulos GameLogic e GameState   | Excelente | [GameLogic](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/pull/3/commits/4db715fe5cce61b0e88f29d57597003eb0f36903), [GameState](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/4fbf7d9ac3055c3ceae8a45bee42c56b909c486b)
 
 ## Outros 
