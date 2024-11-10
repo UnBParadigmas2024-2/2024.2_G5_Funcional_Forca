@@ -10,8 +10,8 @@
 | 18/0015311 |  Danilo Domingo |
 | 19/0030291 |  Jackes Fonseca |
 | 20/0021541 |  Karla Chaiane  |
+| 18/0042661 | Luís Furtado de Araújo |
 | 20/0023748 | Marcos Bittar |
-| 18/0042661 |  Luís Furtado de Araújo|
 | 19/0020814 |  Vinícius Roriz |
 
 ## Sobre 
@@ -74,6 +74,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- | -- |
 | Jackes  |  Programação da funcionalidade de sugerir palavra aleatória, revisão de Pull Request | Boa | Commit tal (com link)
 | Vinícius  | Planejamento, organização, revisão, módulos GameLogic e GameState   | Excelente | [GameLogic](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/pull/3/commits/4db715fe5cce61b0e88f29d57597003eb0f36903), [GameState](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/4fbf7d9ac3055c3ceae8a45bee42c56b909c486b)
+| Luís Fernando Furtado de Araújo  | Desenvolvimento da main do programa (lógicas do loop do jogo, tomadas de decisão e chamada das funções), Resolução do bug de incompatibilidade da biblioteca 'base' com a versão instalada do GHC | Excelente | [Resolução Bug lib base <-> versão GHC](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/dd9a0173d9864e5b32d7a89da9165cb6d3aee6dc), [Lógicas da main](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/370eb743ee3ad090584879e23094cd92a0b8b79b), [Finalização da main](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/4c58bdca7327309cbaa962f88df8d3469591cea3#diff-d3e498a88b4c374b1edbd8693542a73e944d51a24a64a683658926ba655bc6ffR39)
 
 ## Outros 
 **I. Lições Aprendidas:**

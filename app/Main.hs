@@ -28,13 +28,13 @@ gameLoop currentState = do
     -- Checa se o caractere é válido
     isValidGuess <- validateGuess guess currentState
     if isValidGuess
-        then do 
-            let updatedState = makeGuess guess currentState -- Atualiza o estado com o palpite
-            renderState updatedState
-            let result = checkResult updatedState
-            if result == 1
-                then gameLoop updatedState
-                else if result == 2
-                    then putStrLn $ "\n\nVocê Perdeu. A palavra era: " ++ word currentState ++ "\n"
-                    else putStrLn "\n\nVocê Ganhou. Parabéns!"
-        else gameLoop currentState
+      then do 
+        let updatedState = makeGuess guess currentState -- Atualiza o estado com o palpite
+        renderState updatedState
+        let result = checkResult updatedState
+        if result == 1
+          then gameLoop updatedState
+        else if result == 2
+          then putStrLn $ "\n\nVocê Perdeu. A palavra era: " ++ word currentState ++ "\n"
+        else putStrLn "\n\nVocê Ganhou. Parabéns!"
+    else gameLoop currentState
