@@ -9,7 +9,8 @@
 | -- | -- |
 | 18/0015311 |  Danilo Domingo |
 | 19/0030291 |  Jackes Fonseca |
-| - |  Karla |
+| 20/0021541 |  Karla Chaiane  |
+| 20/0023748 | Marcos Bittar |
 | 18/0042661 |  Luís Furtado de Araújo|
 | 19/0020814 |  Vinícius Roriz |
 
