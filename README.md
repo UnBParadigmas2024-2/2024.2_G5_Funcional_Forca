@@ -19,7 +19,9 @@ Esta é uma implementação em Haskell do clássico jogo da forca, onde o jogado
 O progama escolhe uma palavra e mostra a quantidade de letras representadas por "_". O jogador então tem 6 tentativas para acertar todas as letras da palavra, com cada tentativa errada adicionando uma parte do corpo ao boneco na forca, que é exibida pelo programa.
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+<img src="img/round1.png" width="500"/> 
+<img src="img/round2.png" width="500"/> 
+<img src="img/vitoria.png" width="500"/> 
 
 ## Instalação 
 **Linguagens**: Haskell<br>
@@ -73,11 +75,25 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Vinícius  | Planejamento, organização, revisão, módulos GameLogic e GameState   | Excelente | [GameLogic](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/pull/3/commits/4db715fe5cce61b0e88f29d57597003eb0f36903), [GameState](https://github.com/UnBParadigmas2024-2/2024.2_G5_Funcional_Forca/commit/4fbf7d9ac3055c3ceae8a45bee42c56b909c486b)
 
 ## Outros 
-Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+**I. Lições Aprendidas:**
+
+Esse projeto nos desafiou a sair da mentalidade das linguagens imperativas, e mergulhar no paradigma funcional. Uma das primeiras lições foi compreender a imutabilidade do estado, que em Haskell é tratada através de funções puras e valores de retorno, em vez de variáveis mutáveis.  
+Esse conceito mudou a abordagem para gerenciar o estado do jogo, exigindo a passagem contínua de valores atualizados, como a lista de letras adivinhadas e o número de vidas, sem modificar diretamente o estado original.  
+Aprender a utilizar IO para manipular entradas e saídas foi fundamental para balancear a pureza funcional com as necessidades de interação do jogo.  
+
+**II. Percepções:**
+
+Um dos pontos fortes do paradigma é a facilidade de modularização, que nos proporcionou dividir a carga de trabalho entre os integrantes e depois unir os módulos criados sem dificuldade, já que as entradas e saídas já estavam claramente definidas.  
+A criação de funções pequenas e compostas reforçou uma abordagem declarativa, tornando o código mais legível e fácil de manter.  
+Esse projeto destacou a eficiência de Haskell em problemas que exigem uma lógica clara e concisa, enquanto promoveu uma mentalidade funcional focada em composição, modularidade e previsibilidade do comportamento do programa.
+
+**III. Contribuições e Fragilidades:**
+
+
+
+**IV. Trabalhos Futuros:**
+
+
 
 ## Fontes
 ### [Zvon](http://www.zvon.org/other/haskell/Outputglobal/index.html)
