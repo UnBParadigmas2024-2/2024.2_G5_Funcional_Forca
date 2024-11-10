@@ -84,17 +84,21 @@ Aprender a utilizar IO para manipular entradas e saídas foi fundamental para ba
 
 **II. Percepções:**
 
-Um dos pontos fortes do paradigma é a facilidade de modularização, que nos proporcionou dividir a carga de trabalho entre os integrantes e depois unir os módulos criados sem dificuldade, já que as entradas e saídas já estavam claramente definidas.  
+Um dos pontos fortes do paradigma é a modularização, que nos proporcionou dividir a carga de trabalho entre os integrantes e depois unir os módulos criados com pouca dificuldade, já que as entradas e saídas já estavam claramente definidas.  
 A criação de funções pequenas e compostas reforçou uma abordagem declarativa, tornando o código mais legível e fácil de manter.  
 Esse projeto destacou a eficiência de Haskell em problemas que exigem uma lógica clara e concisa, enquanto promoveu uma mentalidade funcional focada em composição, modularidade e previsibilidade do comportamento do programa.
 
 **III. Contribuições e Fragilidades:**
 
+Uma grande contribuição do modelo de separação por módulos foi a clara divisão de responsabilidades, que permitiu que cada pessoa focasse em uma área específica, como lógica do jogo, gerenciamento de estado, renderização e escolha de palavras, aprofundando o conhecimento sobre o funcionamento e as melhores práticas do Haskell em cada domínio. 
 
+No entanto, a divisão por módulos também trouxe fragilidades, principalmente em relação à comunicação e à coesão do projeto. Como cada módulo foi desenvolvido separadamente, houve desafios para garantir que todos mantivessem a mesma visão de como o jogo deveria funcionar.  
+Erros de integração surgiram, o que resultou em ajustes de última hora e retrabalho. Outro ponto sensível foi a gestão de tempo e interdependência entre os módulos, pois alguns integrantes precisaram esperar a conclusão de outros módulos antes de prosseguir, o que atrasou o fluxo de desenvolvimento em certos momentos.
 
 **IV. Trabalhos Futuros:**
 
-
+Para futuros trabalhos, há várias melhorias e expansões que poderiam ser implementadas neste projeto. Como a estrutura modular do código atual facilita a adição de novas funcionalidades, poderiam facilmente serem desenvolvidos módulos separados sem interferir na lógica principal, uma abordagem interessante seria aumentar a interatividade, por exemplo, permitindo diferentes níveis de dificuldade ou categorias temáticas de palavras, ou até mesmo um sistema de dicas para o jogador.  
+Também seria útil considerar uma migração para uma interface gráfica, usando bibliotecas como Gloss ou Brick, que tornariam o jogo mais visualmente atraente, mas que eram complexas demais para serem aprendidas nesse curto período de tempo.
 
 ## Fontes
 ### [Zvon](http://www.zvon.org/other/haskell/Outputglobal/index.html)
