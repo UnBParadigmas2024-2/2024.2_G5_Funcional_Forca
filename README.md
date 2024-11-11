@@ -13,6 +13,7 @@
 | 18/0042661 | Luís Furtado de Araújo |
 | 20/0023748 | Marcos Bittar |
 | 19/0020814 |  Vinícius Roriz |
+| 17/0039803 | Lucas Medeiros Rosa |
 
 ## Sobre 
 Esta é uma implementação em Haskell do clássico jogo da forca, onde o jogador tenta adivinhar uma palavra escondida, letra por letra, dentro de um número limitado de tentativas.
