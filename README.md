@@ -48,26 +48,19 @@ cabal run
 Ao executar o projeto, o programa escolherá uma palavra e mostrará traços representando a quantidade de letras. O jogador pode então digitar um caractere (deve ser uma letra do alfabeto, não importando se maiúscula ou minúscula). Caso seja digitado mais de um caractere, só o primeiro será reconhecido.  
 <img src="img/round1.png" width="500"/>  
 
-O programa irá gerar outra forca com o novo estado do jogo, substituindo traços quando o caractere sugerido pelo jogador se encaixar naquela posição na palavra.
+O programa irá gerar outra forca com o novo estado do jogo, substituindo traços quando o caractere sugerido pelo jogador se encaixar naquela posição na palavra.  
 <img src="img/round2.png" width="500"/>  
 
-Quando o jogador errar seu palpite, uma nova parte do boneco será gerada na forca, e o jogo acaba se o boneco ficar completo, portanto o jogador tem 6 tentativas.
+Quando o jogador errar seu palpite, uma nova parte do boneco será gerada na forca, e o jogo acaba se o boneco ficar completo, portanto o jogador tem 6 tentativas.  
 <img src="img/round3.png" width="500"/>  
-
+  
 Ao acertar todas as letras, o jogo se encerra na vitória do jogador.  
-<img src="img/vitoria.png" width="500"/>
+<img src="img/vitoria.png" width="500"/>  
 
 
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
-Procure: 
-(i) Introduzir o projeto;
-(ii) Mostrar passo a passo o código, explicando-o, e deixando claro o que é de terceiros, e o que é contribuição real da equipe;
-(iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e
-(iV) Apresentar lições aprendidas, contribuições, pendências, e ideias para trabalhos futuros.
-OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
-TEMPO: +/- 15min
+[Link para o vídeo](https://youtu.be/vjB8VmU7ohk)
 
 ## Participações
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
